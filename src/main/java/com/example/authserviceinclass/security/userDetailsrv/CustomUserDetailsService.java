@@ -11,9 +11,9 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class CustomeUserDetail implements UserDetailsService {
+public class CustomUserDetailsService implements UserDetailsService {
     private UserRepository userRepository;
-    public CustomeUserDetail(UserRepository userRepository){
+    public CustomUserDetailsService(UserRepository userRepository){
         this.userRepository = userRepository;
     }
     @Override
