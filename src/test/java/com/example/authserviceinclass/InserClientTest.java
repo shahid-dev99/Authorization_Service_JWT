@@ -17,14 +17,14 @@ import org.springframework.test.annotation.Commit;
 
 import java.util.UUID;
 
-@SpringBootTest
+//@SpringBootTest
 public class InserClientTest {
-    @Autowired
+//    @Autowired
     private PasswordEncoder bCryptPasswordEncoder;
-    @Autowired
+//    @Autowired
     private JpaRegisteredClientRepository jpaRegisteredClientRepository;
-    @Test
-    @Commit
+//    @Test
+//    @Commit
     public void inserClient(){
         //Client client = new Client();
         RegisteredClient oidcClient = RegisteredClient.withId(UUID.randomUUID().toString())

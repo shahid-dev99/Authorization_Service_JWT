@@ -83,7 +83,8 @@ import org.springframework.security.web.util.matcher.MediaTypeRequestMatcher;
             http
                     .authorizeHttpRequests((authorize) -> authorize
                             .requestMatchers("/auth/signup").permitAll()
-                            .anyRequest().authenticated()
+//                            .anyRequest().authenticated()
+                            .anyRequest().permitAll()
                     )
                     // Form login handles the redirect to the login page from the
                     // authorization server filter chain
